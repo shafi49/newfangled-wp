@@ -9,7 +9,7 @@
         <div id="main-slider" class="flexslider">
             <ul class="slides">
               <li>
-                <img src="img/slides/1.jpg" alt="" />
+                <img src="<?php get_template_directory_uri (); ?>/img/slides/1.jpg" alt="" />
                 <div class="flex-caption">
                     <h3>Modern Design</h3> 
 					<p>Duis fermentum auctor ligula ac malesuada. Mauris et metus odio, in pulvinar urna</p> 
@@ -17,7 +17,7 @@
                 </div>
               </li>
               <li>
-                <img src="img/slides/2.jpg" alt="" />
+                <img src="<?php get_template_directory_uri (); ?>/img/slides/2.jpg" alt="" />
                 <div class="flex-caption">
                     <h3>Fully Responsive</h3> 
 					<p>Sodales neque vitae justo sollicitudin aliquet sit amet diam curabitur sed fermentum.</p> 
@@ -25,7 +25,7 @@
                 </div>
               </li>
               <li>
-                <img src="img/slides/3.jpg" alt="" />
+                <img src="<?php get_template_directory_uri (); ?>/img/slides/3.jpg" alt="" />
                 <div class="flex-caption">
                     <h3>Clean & Fast</h3> 
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.</p> 
