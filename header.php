@@ -31,7 +31,10 @@
                     <a class="navbar-brand" href="index.html"><span>M</span>oderna</a>
                 </div>
                 <div class="navbar-collapse collapse ">
-                    <ul class="nav navbar-nav">
+                   
+                   <?php newfangled_display_menu (); ?>
+                   
+                    <!--<ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Features <b class=" icon-angle-down"></b></a>
@@ -44,7 +47,7 @@
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                    </ul>-->
                 </div>
             </div>
         </div>
