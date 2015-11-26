@@ -4,27 +4,42 @@
 						<input class="form-control" type="text" placeholder="Search..">
 					</form>
 				</div>
-				<div class="widget">
-					<h5 class="widgetheading">Categories</h5>
-					<ul class="cat">
-						<li><i class="icon-angle-right"></i><a href="#">Web design</a><span> (20)</span></li>
-						<li><i class="icon-angle-right"></i><a href="#">Online business</a><span> (11)</span></li>
-						<li><i class="icon-angle-right"></i><a href="#">Marketing strategy</a><span> (9)</span></li>
-						<li><i class="icon-angle-right"></i><a href="#">Technology</a><span> (12)</span></li>
-						<li><i class="icon-angle-right"></i><a href="#">About finance</a><span> (18)</span></li>
-					</ul>
-				</div>
+
+<?php 
+//trim excerpt length for sidebar posts
+
+function trim_excerpt_length ($length) {
+    return 20;
+}
+add_filter ('excerpt_length', 'trim_excerpt_length'); 
+
+?>
+
+				<?php if (!dynamic_sidebar ( 'blog' ) ) {
+                    echo "<h5>Oops! No widgets setup yet</h5>";
+                    echo "<p>Please set up widgets from admin panel</p>";
+				} ?>
 				<div class="widget">
 					<h5 class="widgetheading">Latest posts</h5>
 					<ul class="recent">
+					
+					<?php query_posts ('posts_per_page=3'); if (have_posts () ) : while (have_posts () ) : the_post (); ?>
+					
 						<li>
-						<img src="img/dummies/blog/65x65/thumb1.jpg" class="pull-left" alt="">
-						<h6><a href="#">Lorem ipsum dolor sit</a></h6>
-						<p>
-							 Mazim alienum appellantur eu cu ullum officiis pro pri
+						<img src="<?php ?>" class="pull-left" alt="">
+						<h6><a href="<?php the_permalink (); ?>"><?php the_title (); ?></a></h6>
+
+
+                        <p>
+							 <?php the_excerpt (); ?>
 						</p>
 						</li>
-						<li>
+                
+				    <?php endwhile; else : ?>
+                        <p>No recent Posts</p>
+                    <?php endif; wp_reset_postdata(); ?>
+                    
+						<!--<li>
 						<a href="#"><img src="img/dummies/blog/65x65/thumb2.jpg" class="pull-left" alt=""></a>
 						<h6><a href="#">Maiorum ponderum eum</a></h6>
 						<p>
@@ -37,7 +52,7 @@
 						<p>
 							 Mazim alienum appellantur eu cu ullum officiis pro pri
 						</p>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 				<div class="widget">

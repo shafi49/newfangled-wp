@@ -19,4 +19,8 @@ get_template_part ('functions', 'menus');
 
 add_theme_support( 'post-thumbnails' );
 
+//include functions-widgets.php 
+get_template_part ( 'functions', 'widgets' ); 
+
+
 ?>

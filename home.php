@@ -11,11 +11,11 @@
 				<article> <!--repeat this article by loop-->
 						<div class="post-image">
 							<div class="post-heading">
-								<h3><a href="<?php the_permalink; ?>"><?php the_title ();?></a></h3>
+								<h3><a href="<?php the_permalink (); ?>"><?php the_title ();?></a></h3>
 							</div>
 <?php
 // check if the post has a Post Thumbnail assigned to it.
-if ( has_post_thumbnail() ) {
+if ( has_post_thumbnail () ) {
 	the_post_thumbnail('large');
 }
 ?> 
