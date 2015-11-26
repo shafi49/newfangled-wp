@@ -90,7 +90,7 @@ echo $pagination;
 				</div> <!--div#pagination ends-->
 			</div>
 			<div class="col-lg-4">
-				<?php get_sidebar (); ?>
+				<?php get_sidebar ('blog'); ?>
 			</div>
 		</div>
 	</div>
