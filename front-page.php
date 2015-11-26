@@ -9,7 +9,7 @@
         <div id="main-slider" class="flexslider">
             <ul class="slides">
               <li>
-                <img src="<?php get_template_directory_uri (); ?>/img/slides/1.jpg" alt="" />
+                <img src="<?php echo get_stylesheet_directory_uri (); ?>/img/slides/1.jpg" alt="" />
                 <div class="flex-caption">
                     <h3>Modern Design</h3> 
 					<p>Duis fermentum auctor ligula ac malesuada. Mauris et metus odio, in pulvinar urna</p> 
@@ -17,7 +17,7 @@
                 </div>
               </li>
               <li>
-                <img src="<?php get_template_directory_uri (); ?>/img/slides/2.jpg" alt="" />
+                <img src="<?php echo get_stylesheet_directory_uri (); ?>/img/slides/2.jpg" alt="" />
                 <div class="flex-caption">
                     <h3>Fully Responsive</h3> 
 					<p>Sodales neque vitae justo sollicitudin aliquet sit amet diam curabitur sed fermentum.</p> 
@@ -25,7 +25,7 @@
                 </div>
               </li>
               <li>
-                <img src="<?php get_template_directory_uri (); ?>/img/slides/3.jpg" alt="" />
+                <img src="<?php echo get_stylesheet_directory_uri (); ?>/img/slides/3.jpg" alt="" />
                 <div class="flex-caption">
                     <h3>Clean & Fast</h3> 
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.</p> 
@@ -151,12 +151,12 @@
 						<li class="col-lg-3 design" data-id="id-0" data-type="web">
 						<div class="item-thumbs">
 						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 1" href="<?php get_template_directory_uri (); ?>/img/works/1.jpg">
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 1" href="<?php echo get_stylesheet_directory_uri (); ?>/img/works/1.jpg">
 						<span class="overlay-img"></span>
 						<span class="overlay-img-thumb font-icon-plus"></span>
 						</a>
 						<!-- Thumb Image and Description -->
-						<img src="<?php get_template_directory_uri (); ?>/img/works/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						<img src="<?php echo get_stylesheet_directory_uri (); ?>/img/works/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
 						</div>
 						</li>
 						<!-- End Item Project -->
@@ -168,29 +168,29 @@
 						<span class="overlay-img-thumb font-icon-plus"></span>
 						</a>
 						<!-- Thumb Image and Description -->
-						<img src="<?php get_template_directory_uri (); ?>/img/works/2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						<img src="<?php echo get_stylesheet_directory_uri (); ?>/img/works/2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
 						</li>
 						<!-- End Item Project -->
 						<!-- Item Project and Filter Name -->
 						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
 						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 3" href="<?php get_template_directory_uri (); ?>/img/works/3.jpg">
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 3" href="<?php echo get_stylesheet_directory_uri (); ?>/img/works/3.jpg">
 						<span class="overlay-img"></span>
 						<span class="overlay-img-thumb font-icon-plus"></span>
 						</a>
 						<!-- Thumb Image and Description -->
-						<img src="<?php get_template_directory_uri (); ?>/img/works/3.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						<img src="<?php echo get_stylesheet_directory_uri (); ?>/img/works/3.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
 						</li>
 						<!-- End Item Project -->
 						<!-- Item Project and Filter Name -->
 						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
 						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 4" href="<?php get_template_directory_uri (); ?>/img/works/4.jpg">
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 4" href="<?php echo get_stylesheet_directory_uri (); ?>/img/works/4.jpg">
 						<span class="overlay-img"></span>
 						<span class="overlay-img-thumb font-icon-plus"></span>
 						</a>
 						<!-- Thumb Image and Description -->
-						<img src="<?php get_template_directory_uri (); ?>/img/works/4.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						<img src="<?php echo get_stylesheet_directory_uri (); ?>/img/works/4.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
 						</li>
 						<!-- End Item Project -->
 					</ul>
