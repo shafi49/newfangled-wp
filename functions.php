@@ -11,7 +11,12 @@ get_template_part ('wp_bootstrap_navwalker');
 //include functions-menus.php
 get_template_part ('functions', 'menus'); 
 
+/*
+*****************
+  Theme Support
+*****************
+*/
 
-
+add_theme_support( 'post-thumbnails' );
 
 ?>
