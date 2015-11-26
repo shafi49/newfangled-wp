@@ -48,7 +48,8 @@
 			<div class="col-lg-12">
 				<div class="big-cta">
 					<div class="cta-text">
-						<h2><?php the_title (); ?></h2>
+	                   <p>using front-page.php</p>
+						<h2><span><?php bloginfo ('name'); ?></span> Highly Customisable Theme</h2>
 					</div>
 				</div>
 			</div>

@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes (); ?>>
 <head>
-<meta charset="utf-8">
-<title>Moderna - Bootstrap 3 flat corporate template</title>
+<meta charset="<?php bloginfo ('charset'); ?>">
+<title><?php  bloginfo ('name'); ?><?php wp_title ('|', true, 'left'); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
-<meta name="author" content="http://bootstraptaste.com" />
+<meta name="description" content="<?php if ( is_single() ) {
+        single_post_title('', true); 
+    } else {
+        bloginfo('name'); echo ' - '; bloginfo('description');
+    }
+    ?>" />
+<meta name="author" content="<?php bloginfo ('admin_email'); ?>" />
 
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -16,7 +21,7 @@
 <?php wp_head (); ?>
 
 </head>
-<body>
+<body <?php body_class (); ?>>
 <div id="wrapper">
 	<!-- start header -->
 	<header>
@@ -28,7 +33,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><span>M</span>oderna</a>
+                    <a class="navbar-brand" href="<?php bloginfo ('url'); ?>" title = "<?php bloginfo ('name'); ?>"><?php bloginfo ('name')?></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                    

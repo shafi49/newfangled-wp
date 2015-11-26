@@ -21,9 +21,13 @@ function newfangled_display_menu () {
 $args = array (
     'theme_location' => 'primary-menu',
     'menu' => 'Main Menu',
+    'depth' => 2,
     'container' => false,
     'menu_class' => 'nav navbar-nav',
-    'menu_id' => 'menu'
+    'fallback_cb' => 'wp_page_menu',
+    //Process nav menu using our custom nav walker
+    'walker' => new wp_bootstrap_navwalker()
+
 ); //$args ends 
 
     wp_nav_menu ($args);
