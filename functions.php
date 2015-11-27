@@ -22,5 +22,7 @@ add_theme_support( 'post-thumbnails' );
 //include functions-widgets.php 
 get_template_part ( 'functions', 'widgets' ); 
 
+//better wp comments
+//get_template_part ( 'comments', 'better' ); 
 
 ?>

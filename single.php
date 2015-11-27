@@ -52,11 +52,12 @@ $ID = get_the_author_meta ( 'ID' );
 								</li>
 							</ul>
 							
-							<?php comments_template (); ?>
 							
 						</div>
 				</article>
-				
+                <div id = "comments">        
+				<?php comments_template (); ?>
+                </div>
                <?php endwhile; ?>
                <!-- Add the pagination functions here. -->
 
