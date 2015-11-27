@@ -30,6 +30,21 @@
 						<span class="overlay-img-thumb font-icon-plus"></span>
 						</a>
 						<!-- Thumb Image and Description -->
+<?php 
+$arguments = array (
+        'post_type' => 'portfolio',
+        'posts_per_page' => -1
+        
+);
+
+$query = new WP_Query ($arguments); 
+
+?>
+<?php if ($query -> have_posts() ) : while ($query -> have_posts () ) : $query -> the_post(); ?>
+<?php //the_post_thumbnail (); ?>
+<?php //slideImage ('image'); ?>
+<?php endwhile; endif; wp_reset_postdata(); ?>
+
 						<img src="<?php echo get_stylesheet_directory_uri (); ?>/img/works/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
 						</li><li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
 						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
