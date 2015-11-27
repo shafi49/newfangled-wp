@@ -32,5 +32,9 @@ function slideImage ($image) {
     echo $url; 
 }
 
+function textData ($textData) {
+the_field ($textData); 
+}
+
 
 ?>

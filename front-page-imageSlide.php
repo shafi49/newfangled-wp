@@ -13,8 +13,8 @@
                 <!--<img src="<?php //echo get_stylesheet_directory_uri (); ?>/img/slides/1.jpg" alt="" />-->
                 
                 <div class="flex-caption">
-                    <h3>Modern Design</h3> 
-					<p>Duis fermentum auctor ligula ac malesuada. Mauris et metus odio, in pulvinar urna</p> 
+                    <h3><?php textData ('slide_1_text_header'); ?></h3> 
+					<p><?php textData ('slide_1_text_description'); ?></p> 
 					<a href="#" class="btn btn-theme">Learn More</a>
                 </div>
               </li>
@@ -25,8 +25,8 @@
 
 
                 <div class="flex-caption">
-                    <h3>Fully Responsive</h3> 
-					<p>Sodales neque vitae justo sollicitudin aliquet sit amet diam curabitur sed fermentum.</p> 
+                    <h3><?php textData ('slide_2_text_header'); ?></h3> 
+					<p><?php textData ('slide_2_text_description'); ?></p> 
 					<a href="#" class="btn btn-theme">Learn More</a>
                 </div>
               </li>
@@ -37,8 +37,8 @@
 
 
                 <div class="flex-caption">
-                    <h3>Clean & Fast</h3> 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.</p> 
+                    <h3><?php textData ('slide_3_text_header'); ?></h3> 
+					<p><?php textData ('slide_3_text_description'); ?></p> 
 					<a href="#" class="btn btn-theme">Learn More</a>
                 </div>
               </li>
