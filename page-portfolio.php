@@ -22,7 +22,8 @@
 				</div>
 				<div class="row">
 					<section id="projects">
-					<ul id="thumbs" class="portfolio" style="height: 450px;"><li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="web">
+					<ul id="thumbs" class="portfolio" style="height: 450px;">
+					<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="web">
 						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
 						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="<?php echo get_stylesheet_directory_uri (); ?>/img/works/1.jpg">
 						<span class="overlay-img"></span>

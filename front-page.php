@@ -19,7 +19,8 @@
 	</section>
 	<section id="content">
 	<div class="container">
-		
+
+		<!-- require front-page-features.php -->
     <?php get_template_part ('front-page', 'features'); ?>
 
 		<!-- divider -->
@@ -31,7 +32,8 @@
 		</div>
 		<!-- end divider -->
 		<!-- Portfolio Projects -->
-		
+
+        <!-- require front-page-recent_works.php -->
 		<?php get_template_part ('front-page', 'recent_works'); ?>
 
 	</div>
