@@ -1732,6 +1732,18 @@ img.pull-left, .align-left{
 /*
     Custom Style [ Munia ]
 */
+/*
+* 404 Page Home Icon
+*/
+span.homeicon i {
+    font-size: 48px;
+}
+
+.error404 h3 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: lighter;
+    color: #656565;
+}
 
 i.icon-user img {
     border-radius: 50%;
@@ -1768,7 +1780,7 @@ input#s {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
-.widgetheading + ul {
+.widgetheading + ul, .footerwidget_heading + ul {
     list-style: none;
     color: #656565;
     margin-left: 0px;
@@ -1779,7 +1791,9 @@ input#s {
     color: #656565;
     margin-left: 0px;
 }
-
+.footerwidget_heading + ul a {
+    color: #fff;
+}
 .widgetheading + ul li a:hover {
     color: #68A4C4;
 }

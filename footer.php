@@ -1,7 +1,11 @@
 	<footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3">
+				<?php if ( !dynamic_sidebar ( 'footer' ) ) {
+                    echo "<h5>Oops! No widgets setup yet</h5>";
+                    echo "<p>Please set up widgets from admin panel</p>";
+				} ?>
+			<!--<div class="col-lg-3">
 				<div class="widget">
 					<h5 class="widgetheading">Get in touch with us</h5>
 					<address>
@@ -45,7 +49,7 @@
 					<div class="clear">
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	</div>
 	<div id="sub-footer">
@@ -54,7 +58,7 @@
 				<div class="col-lg-6">
 					<div class="copyright">
 						<p>
-							<span>&copy; Moderna 2014 All right reserved. By </span><a href="http://bootstraptaste.com" target="_blank">Bootstraptaste</a>
+							<span>&copy; NewFangled <?php the_time ('Y'); ?> All right reserved. By </span><a href="http://www.twitter.com/MRSHAFI" target="_blank">SHAFI ul BARI</a>
 						</p>
 					</div>
 				</div>
