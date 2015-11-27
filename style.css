@@ -1730,6 +1730,11 @@ img.pull-left, .align-left{
 /*
     Custom Style [ Munia ]
 */
+
+i.icon-user img {
+    border-radius: 50%;
+}
+
 .widget figure.pull-left > img {
     float: left;
     margin: 0 15px 0px 0px;

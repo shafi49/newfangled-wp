@@ -6,12 +6,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8">
-                                <p>using home.php</p>
+                                <p>using single.php</p>
+                                
+                <?php //query_posts ('posts_per_page=1');?>
+
                 <?php if ( have_posts () ) : while ( have_posts () ) : the_post (); ?>
+                
 				<article> <!--repeat this article by loop-->
 						<div class="post-image">
 							<div class="post-heading">
-								<h3><a href="<?php the_permalink (); ?>"><?php the_title ();?></a></h3>
+								<h3><?php the_title ();?></h3>
 							</div>
 <?php
 // check if the post has a Post Thumbnail assigned to it.
@@ -21,7 +25,7 @@ if ( has_post_thumbnail () ) {
 ?> 
 						</div>
 						
-						<?php the_excerpt (); ?>
+						<?php the_content (); ?>
 						
 						<div class="bottom-article">
 							<ul class="meta-post">
@@ -46,13 +50,10 @@ $ID = get_the_author_meta ( 'ID' );
 								<?php the_author (); ?>
 								</a>
 								</li>
-								<li><i class="icon-folder-open"></i>
-								<a href="<?php echo get_page_link ( 10 ); ?>"> <?php wp_title (''); ?>
-								</a>
-								</li>
-								<li><i class="icon-comments"></i><a href="<?php the_permalink (); ?>">4 Comments</a></li>
 							</ul>
-							<a href="<?php the_permalink (); ?>" class="pull-right">Continue reading <i class="icon-angle-right"></i></a>
+							
+							<?php comments_template (); ?>
+							
 						</div>
 				</article>
 				
