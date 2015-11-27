@@ -25,4 +25,12 @@ get_template_part ( 'functions', 'widgets' );
 //better wp comments
 //get_template_part ( 'comments', 'better' ); 
 
+//slider image retrieval function 
+function slideImage ($image) {
+    $data = get_field ($image); 
+    $url = $data['url'];
+    echo $url; 
+}
+
+
 ?>
