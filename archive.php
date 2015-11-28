@@ -13,15 +13,16 @@
 							<div class="post-heading">
 								<h3><a href="<?php the_permalink (); ?>"><?php the_title ();?></a></h3>
 							</div>
+						<?php the_excerpt (); ?>
 <?php
 // check if the post has a Post Thumbnail assigned to it.
 if ( has_post_thumbnail () ) {
-	the_post_thumbnail('large');
+	the_post_thumbnail( array (200, 200) );
 }
 ?> 
+
 						</div>
 						
-						<?php the_excerpt (); ?>
 						
 						<div class="bottom-article">
 							<ul class="meta-post">
@@ -32,9 +33,9 @@ $day = get_post_time ('j');
 $year = get_post_time ('Y');
  ?>
 								<li><i class="icon-calendar"></i>
-								<a href="<?php echo get_day_link ( $month, $day, $year ); ?>">
+								<i>
 								<?php echo get_post_time ( 'F j, Y'); ?>
-								</a>
+                                </i>
 								</li>
 <?php 
 //retrieve the author meta ID
@@ -46,14 +47,13 @@ $ID = get_the_author_meta ( 'ID' );
 								<?php the_author (); ?>
 								</a>
 								</li>
-								<li><i class="icon-folder-open"></i>
-								<a href="<?php echo get_page_link ( 10 ); ?>"> <?php wp_title (''); ?>
-								</a>
-								</li>
-								<li><i class="icon-comments"></i><a href="<?php the_permalink (); ?>">4 Comments</a></li>
+								
+								<li><i class="icon-comments"></i><a href="<?php the_permalink (); ?>">Comments</a></li>
 							</ul>
 							<a href="<?php the_permalink (); ?>" class="pull-right">Continue reading <i class="icon-angle-right"></i></a>
 						</div>
+
+
 				</article>
 				
                <?php endwhile; ?>
@@ -61,7 +61,7 @@ $ID = get_the_author_meta ( 'ID' );
 
                <?php else : ?>
                 
-                <p>Oops! Looks like you don't have any posts yet... </p>
+                <p>Oops! Looks like this on that day you didn't have any posts!... </p>
                 
                 <?php endif; wp_reset_postdata (); ?>
 <!--
@@ -81,12 +81,6 @@ $pagination = get_the_posts_pagination (
 echo $pagination; 
 ?>
 
-<!--
-					<span class="all">Page 1 of 3</span>
-					<span class="current">1</span>
-					<a href="#" class="inactive">2</a>
-					<a href="#" class="inactive">3</a>
--->
 				</div> <!--div#pagination ends-->
 			</div>
 			<div class="col-lg-4">

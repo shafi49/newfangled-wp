@@ -32,8 +32,8 @@ $day = get_post_time ('j');
 $year = get_post_time ('Y');
  ?>
 								<li><i class="icon-calendar"></i>
-								<a href="<?php echo get_day_link ( $month, $day, $year ); ?>">
-								<?php echo get_post_time ( 'F j, Y'); ?>
+								<a href="<?php _e ( get_day_link($year, $month, $day) ); ?>">
+								<?php the_time ('F j, Y');?>
 								</a>
 								</li>
 <?php 
