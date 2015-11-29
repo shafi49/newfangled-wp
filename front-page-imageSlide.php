@@ -6,42 +6,31 @@
 	<!-- Slider -->
         <div id="main-slider" class="flexslider">
             <ul class="slides">
-              <li>
+
+
+<?php 
+$args = array (
+    'post_type' => 'slide',
+    'posts_per_page' => 5
+);
+$query = new WP_Query ($args);
+?>
+<?php if ( $query -> have_posts () ) : while ( $query -> have_posts () ) : $query -> the_post (); ?>
               
-<img src="<?php slideImage ('slide_1'); ?>" alt="">
+              <li>              
+<img src="<?php slideImage ('image_slide'); ?>" alt="">
 
                 <!--<img src="<?php //echo get_stylesheet_directory_uri (); ?>/img/slides/1.jpg" alt="" />-->
                 
                 <div class="flex-caption">
-                    <h3><?php textData ('slide_1_text_header'); ?></h3> 
-					<p><?php textData ('slide_1_text_description'); ?></p> 
+                    <h3><?php the_title (); ?></h3> 
+					<p><?php the_field ('image_description'); ?></p> 
 					<a href="#" class="btn btn-theme">Learn More</a>
                 </div>
               </li>
-              <li>
-
-<img src="<?php slideImage ('slide_2'); ?>" alt="">
-
-
-
-                <div class="flex-caption">
-                    <h3><?php textData ('slide_2_text_header'); ?></h3> 
-					<p><?php textData ('slide_2_text_description'); ?></p> 
-					<a href="#" class="btn btn-theme">Learn More</a>
-                </div>
-              </li>
-              <li>
-
-<img src="<?php slideImage ('slide_3'); ?>" alt="">
-
-
-
-                <div class="flex-caption">
-                    <h3><?php textData ('slide_3_text_header'); ?></h3> 
-					<p><?php textData ('slide_3_text_description'); ?></p> 
-					<a href="#" class="btn btn-theme">Learn More</a>
-                </div>
-              </li>
+              
+              <?php endwhile; endif; wp_reset_postdata(); ?>
+              
             </ul>
         </div>
 	<!-- end slider -->
