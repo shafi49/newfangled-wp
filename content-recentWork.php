@@ -23,7 +23,7 @@ $query = new WP_Query ($arguments);
 						</a>
 						<!-- Thumb Image and Description -->
 
-						<img src="<?php slideImage ('image'); ?>" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						<img src="<?php slideImage ('image'); ?>" alt="<?php the_field ('description'); ?>">
 						</li>
 
 <?php endwhile; endif; wp_reset_postdata(); ?>

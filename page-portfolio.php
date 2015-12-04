@@ -22,7 +22,7 @@
 				</div>
 				<div class="row">
 					<section id="projects">
-					<ul id="thumbs" class="portfolio" style="height: 450px;">
+					<ul id="thumbs" class="portfolio">
 
                         <?php get_template_part ('content', 'recentWork'); ?>
 
@@ -32,6 +32,6 @@
 			</div>
 		</div>
 	</div>
-	</section>
+</section>
 
 <?php get_footer (); ?>
